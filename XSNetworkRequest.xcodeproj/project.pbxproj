@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5355DA3A1F7102E3003FA4B9 /* XSNetworkRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5355DA381F7102E3003FA4B9 /* XSNetworkRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33C6DC223BC2549A1759A93B /* Pods_XSNetworkRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6FE261379EAF71AA2C102F /* Pods_XSNetworkRequest.framework */; };
+		5355DA411F711179003FA4B9 /* XSNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5355DA401F711179003FA4B9 /* XSNetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5355DA351F7102E3003FA4B9 /* XSNetworkRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XSNetworkRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5355DA381F7102E3003FA4B9 /* XSNetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSNetworkRequest.h; sourceTree = "<group>"; };
 		5355DA391F7102E3003FA4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5355DA401F711179003FA4B9 /* XSNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XSNetworkRequest.swift; sourceTree = "<group>"; };
+		6A6FE261379EAF71AA2C102F /* Pods_XSNetworkRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XSNetworkRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8857952E5174777A1E58518C /* Pods-XSNetworkRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSNetworkRequest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XSNetworkRequest/Pods-XSNetworkRequest.debug.xcconfig"; sourceTree = "<group>"; };
+		ADE4067D759BF298DB30365A /* Pods-XSNetworkRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSNetworkRequest.release.xcconfig"; path = "Pods/Target Support Files/Pods-XSNetworkRequest/Pods-XSNetworkRequest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C6DC223BC2549A1759A93B /* Pods_XSNetworkRequest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +37,8 @@
 			children = (
 				5355DA371F7102E3003FA4B9 /* XSNetworkRequest */,
 				5355DA361F7102E3003FA4B9 /* Products */,
+				6AF51D05B5F747ADBBCEC83F /* Pods */,
+				5B254D888A9D1423FFE49D01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +53,27 @@
 		5355DA371F7102E3003FA4B9 /* XSNetworkRequest */ = {
 			isa = PBXGroup;
 			children = (
-				5355DA381F7102E3003FA4B9 /* XSNetworkRequest.h */,
 				5355DA391F7102E3003FA4B9 /* Info.plist */,
+				5355DA401F711179003FA4B9 /* XSNetworkRequest.swift */,
 			);
 			path = XSNetworkRequest;
+			sourceTree = "<group>";
+		};
+		5B254D888A9D1423FFE49D01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A6FE261379EAF71AA2C102F /* Pods_XSNetworkRequest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AF51D05B5F747ADBBCEC83F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8857952E5174777A1E58518C /* Pods-XSNetworkRequest.debug.xcconfig */,
+				ADE4067D759BF298DB30365A /* Pods-XSNetworkRequest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +83,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5355DA3A1F7102E3003FA4B9 /* XSNetworkRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,10 +93,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5355DA3D1F7102E3003FA4B9 /* Build configuration list for PBXNativeTarget "XSNetworkRequest" */;
 			buildPhases = (
+				4F19A643EC5309FBCF03C7AB /* [CP] Check Pods Manifest.lock */,
 				5355DA301F7102E3003FA4B9 /* Sources */,
 				5355DA311F7102E3003FA4B9 /* Frameworks */,
 				5355DA321F7102E3003FA4B9 /* Headers */,
 				5355DA331F7102E3003FA4B9 /* Resources */,
+				B5482B99F3B6FDDD886F6F65 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +121,7 @@
 					5355DA341F7102E3003FA4B9 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = ZUSYPMNH7Y;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,11 +153,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F19A643EC5309FBCF03C7AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B5482B99F3B6FDDD886F6F65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XSNetworkRequest/Pods-XSNetworkRequest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5355DA301F7102E3003FA4B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5355DA411F711179003FA4B9 /* XSNetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +301,9 @@
 		};
 		5355DA3E1F7102E3003FA4B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8857952E5174777A1E58518C /* Pods-XSNetworkRequest.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZUSYPMNH7Y;
@@ -254,13 +316,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaosi.XSNetworkRequest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		5355DA3F1F7102E3003FA4B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE4067D759BF298DB30365A /* Pods-XSNetworkRequest.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZUSYPMNH7Y;
@@ -296,6 +361,7 @@
 				5355DA3F1F7102E3003FA4B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
